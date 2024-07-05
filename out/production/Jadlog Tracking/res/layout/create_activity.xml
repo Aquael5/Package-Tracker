@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AbsoluteLayout
+    width="match_parent"
+    height="match_parent"
+    background="?colorSurface">
+
+  <LinearLayout
+      width="match_parent"
+      height="match_parent"
+      paddingTop="64dp"
+      orientation="horizontal">
+
+    <ImageView
+      width="match_parent"
+      height="72dp"
+      src="@drawable/track_logo"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+      width="match_parent"
+      height="match_parent"
+      orientation="horizontal"
+      gravity="center">
+    <LinearLayout
+        width="match_parent"
+        height="wrap_content"
+        padding="40dp">
+      <TextView
+          width="wrap_content"
+          height="wrap_content"
+          paddingTop="10dp"
+          paddingBottom="5dp"
+          text="PACKAGE NAME "/>
+      <EditText
+          tag="title"
+          width="match_parent"
+          height="wrap_content"
+          padding="10dp"/>
+      <TextView
+          width="wrap_content"
+          height="wrap_content"
+          paddingTop="10dp"
+          paddingBottom="5dp"
+          text="CODE "/>
+      <EditText
+          tag="trackId"
+          width="match_parent"
+          height="wrap_content"
+          padding="10dp"/>
+
+      <LinearLayout
+        width="match_parent"
+        height="wrap_content"
+        gravity="center"
+        paddingTop="15dp"
+        orientation="vertical">
+
+        <View tag="track_icon" width="90dp" height="50dp"/>
+
+      </LinearLayout>
+
+    </LinearLayout>
+  </LinearLayout>
+
+  <LinearLayout
+      width="match_parent"
+      height="match_parent"
+      orientation="horizontal"
+      gravity="bottom">
+
+    <LinearLayout
+        width="match_parent"
+        height="wrap_content"
+        padding="40dp">
+      <Button
+          tag="register"
+          width="match_parent"
+          height="40dp"
+          text="REGISTER"/>
+      <View width="4dp" height="4dp"/>
+      <Button
+          tag="cancel"
+          width="match_parent"
+          height="40dp"
+          background="#0000"
+          text="CANCEL"/>
+    </LinearLayout>
+
+  </LinearLayout>
+
+
+</AbsoluteLayout>

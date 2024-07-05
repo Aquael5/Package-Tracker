@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AbsoluteLayout
+    width="match_parent"
+    height="match_parent"
+    background="?colorSurface">
+
+  <LinearLayout
+      width="match_parent"
+      height="match_parent">
+
+    <LinearLayout
+        width="match_parent"
+        height="52dp"
+        orientation="horizontal"
+        paddingLeft="15dp"
+        gravity="left|center">
+
+      <ImageView
+          tag="back"
+          width="28dp"
+          height="24dp"
+          src="@drawable/arrow_back"/>
+
+      <LinearLayout
+        width="match_parent"
+        height="wrap_content"
+        orientation="vertical">
+
+        <TextView
+            tag="header_title"
+            width="wrap_content"
+            height="wrap_content"
+            text="Header"
+            textSize="18dp"
+            paddingLeft="20dp"/>
+
+        <TextView
+            tag="header_track"
+            width="wrap_content"
+            height="wrap_content"
+            text="TRACK CODE"
+            alpha="0.5"
+            textSize="12dp"
+            paddingLeft="20dp"/>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        width="match_parent"
+        height="match_parent">
+      <LinearLayout
+          tag="content"
+          width="match_parent"
+          height="wrap_content"/>
+    </ScrollView>
+
+  </LinearLayout>
+
+
+  <LinearLayout
+      width="match_parent"
+      height="match_parent"
+      orientation="horizontal"
+      padding="10dp"
+      gravity="bottom">
+    <LinearLayout width="match_parent" height="wrap_content" gravity="right">
+      <ImageView
+          tag="delete"
+          width="52dp"
+          height="52dp"
+          gravity="center"
+          padding="15dp"
+          textSize="20dp"
+          src="@drawable/icon_delete"
+          background="@drawable/button_background"/>
+    </LinearLayout>
+  </LinearLayout>
+
+</AbsoluteLayout>

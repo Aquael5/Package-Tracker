@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+  width="match_parent"
+  height="match_parent"
+  orientation="vertical"
+  padding="10dp"
+  background="?colorSurface">
+
+  <ScrollView
+    width="match_parent"
+    height="match_parent">
+    <LinearLayout
+      tag="contents"
+      width="match_parent"
+      height="wrap_content"
+      orientation="vertical">
+
+    </LinearLayout>
+  </ScrollView>
+
+  <FrameLayout
+    width="match_parent"
+    height="match_parent"
+    orientation="horizontal">
+    <ImageView
+        tag="add_track"
+        width="52dp"
+        height="52dp"
+        gravity="center"
+        padding="15dp"
+        textSize="20dp"
+        layoutGravity="right|bottom"
+        src="@drawable/icon_add"
+        background="@drawable/button_background"/>
+  </FrameLayout>
+
+  <ImageView
+    id="reload_bar"
+    width="32dp"
+    height="32dp"
+    background="@drawable/circle"
+    src="@drawable/icon_loading"
+    padding="2dp"
+    layoutGravity="center|top"
+    marginTop="20dp"/>
+
+</FrameLayout>
