@@ -2,7 +2,7 @@ package io.prototype.package_tracker.shipper;
 
 import io.prototype.package_tracker.models.Order;
 import io.prototype.package_tracker.utils.FileUtils;
-import br.nullexcept.apis.tracker.tracking.Tracker;
+import io.prototype.apis.tracker.tracking.Tracker;
 import br.nullexcept.mux.app.Context;
 import br.nullexcept.mux.graphics.Drawable;
 import br.nullexcept.mux.res.Resources;

@@ -1,6 +1,6 @@
 package io.prototype.package_tracker.widget;
 
-import br.nullexcept.apis.tracker.tracking.Tracker;
+import io.prototype.apis.tracker.tracking.Tracker;
 import br.nullexcept.mux.app.Context;
 import br.nullexcept.mux.view.View;
 import br.nullexcept.mux.view.ViewGroup;

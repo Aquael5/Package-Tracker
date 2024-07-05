@@ -1,10 +1,10 @@
 package io.prototype.package_tracker.models;
 
-import br.nullexcept.apis.tracker.correios.CorreiosTracker;
-import br.nullexcept.apis.tracker.jadlog.JadLogTracker;
-import br.nullexcept.apis.tracker.tracking.Tracker;
+import io.prototype.apis.tracker.correios.CorreiosTracker;
+import io.prototype.apis.tracker.jadlog.JadLogTracker;
 import br.nullexcept.koalas.KoalaArray;
 import br.nullexcept.koalas.KoalaMap;
+import io.prototype.apis.tracker.tracking.Tracker;
 
 import java.util.ArrayList;
 import java.util.List;
