@@ -8,7 +8,7 @@
 
   <ImageView
     width="match_parent"
-    height="256dp"
-    src="@drawable/app_icon"/>
+    height="110dp"
+    src="@drawable/track_logo"/>
 
 </LinearLayout>

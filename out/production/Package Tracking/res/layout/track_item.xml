@@ -32,7 +32,7 @@
           text="Title"/>
 
       <TextView
-          id="subtitle"
+          id="status"
           width="match_parent"
           height="wrap_content"
           textSize="14dp"

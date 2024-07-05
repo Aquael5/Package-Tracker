@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<strings>
+  <string name="package_name">  PACKAGE NAME  </string>
+  <string name="track_code">  TRACK CODE  </string>
+  <string name="register">REGISTER</string>
+  <string name="cancel">CANCEL</string>
+  <string name="to">TO</string>
+  <string name="app_name">PACKAGE TRACKER</string>
+  <string name="package_by">PACKAGE SHIPPED BY</string>
+  <string name="no_data">NO DATA</string>
+</strings>

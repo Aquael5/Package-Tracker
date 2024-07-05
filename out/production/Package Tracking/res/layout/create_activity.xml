@@ -4,24 +4,25 @@
     height="match_parent"
     background="?colorSurface">
 
-  <LinearLayout
+  <FrameLayout
       width="match_parent"
       height="match_parent"
       paddingTop="64dp"
       orientation="horizontal">
 
     <ImageView
-      id="track_icon"
-      width="match_parent"
-      height="100dp"
-      src="@drawable/track_logo"/>
+        id="track_icon"
+        width="match_parent"
+        height="100dp"
+        src="@drawable/track_logo"/>
 
-  </LinearLayout>
+  </FrameLayout>
 
   <LinearLayout
       width="match_parent"
       height="match_parent"
       orientation="horizontal"
+      paddingTop="20dp"
       gravity="center">
     <LinearLayout
         width="match_parent"
@@ -29,9 +30,9 @@
         padding="40dp">
 
       <FrameLayout
-        width="match_parent"
-        height="50dp"
-        background="@drawable/text_layout">
+          width="match_parent"
+          height="50dp"
+          background="@drawable/text_layout">
         <TextView
             width="wrap_content"
             height="wrap_content"
@@ -40,7 +41,7 @@
             marginLeft="20dp"
             textStyle="bold"
             textColor="#5FFF"
-            text="  NOME DO PACOTE  "/>
+            text="@string/package_name"/>
 
         <EditText
             id="title"
@@ -54,10 +55,10 @@
 
       </FrameLayout>
       <FrameLayout
-        width="match_parent"
-        height="50dp"
-        marginTop="20dp"
-        background="@drawable/text_layout">
+          width="match_parent"
+          height="50dp"
+          marginTop="20dp"
+          background="@drawable/text_layout">
         <TextView
             width="wrap_content"
             height="wrap_content"
@@ -66,7 +67,7 @@
             marginLeft="20dp"
             textStyle="bold"
             textColor="#5FFF"
-            text="  CODIGO DE RASTREIO  "/>
+            text="@string/track_code"/>
 
         <EditText
             id="trackId"
@@ -81,11 +82,23 @@
       </FrameLayout>
 
       <LinearLayout
-        width="match_parent"
-        height="wrap_content"
-        gravity="center"
-        paddingTop="15dp"
-        orientation="vertical">
+          width="match_parent"
+          height="wrap_content"
+          gravity="center"
+          paddingTop="5dp"
+          orientation="vertical">
+
+        <TextView
+            id="shipper_name"
+            width="match_parent"
+            height="wrap_content"
+            paddingBottom="5dp"
+            textStyle="bold"
+            gravity="center"
+            textColor="#5FFF"
+            textSize="16dp"
+            layoutGravity="center|top"
+            text=""/>
 
       </LinearLayout>
 
@@ -106,14 +119,14 @@
           id="register"
           width="match_parent"
           height="40dp"
-          text="REGISTER"/>
+          text="@string/register"/>
       <View width="4dp" height="4dp"/>
       <Button
           id="cancel"
           width="match_parent"
           height="40dp"
           background="#0000"
-          text="CANCEL"/>
+          text="@string/cancel"/>
     </LinearLayout>
 
   </LinearLayout>
