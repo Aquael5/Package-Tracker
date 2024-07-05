@@ -18,12 +18,12 @@ public class CreateActivity extends BaseActivity {
         super.onCreate();
         setContentView("create_activity");
 
-        EditText titleEdit = find("title");
+        EditText titleEdit = findViewById("title");
 
         CORREIOS_LOGO = getResources().getDrawable("track_correios");
         JADLOG_LOGO = getResources().getDrawable("track_jadlog");
 
-        find("register").setOnClickListener(v->{
+        findViewById("register").setOnClickListener(v->{
             String trackCode = trackCode();
             String title = titleEdit.getText().toString().trim();
             if (trackCode.length() == 0 || title.length() == 0)
@@ -34,12 +34,12 @@ public class CreateActivity extends BaseActivity {
             finish();
         });
 
-        find("cancel").setOnClickListener(v-> finish());
+        findViewById("cancel").setOnClickListener(v-> finish());
         checkForm();
     }
 
     private String trackCode() {
-        EditText edit = find("trackId");
+        EditText edit = findViewById("trackId");
         String code = edit.getText().toString();
         code = code.toUpperCase();
         while (code.contains(" "))
@@ -60,17 +60,17 @@ public class CreateActivity extends BaseActivity {
     }
 
     private void checkForm() {
-        runDelayed(this::checkForm, 500);
-        EditText titleEdit = find("title");
+        postDelayed(this::checkForm, 500);
+        EditText titleEdit = findViewById("title");
 
         String trackCode = trackCode();
         String title = titleEdit.getText().toString().trim();
         String id = trackCode + "/" + shipping.name();
         if (trackCode.length() == 0 || title.length() == 0 || shipping == Shipping.NULL || OrderManager.has(id)) {
-            if (find("register").getAlpha() != 0.2f)find("register").setAlpha(0.2f);
+            if (findViewById("register").getAlpha() != 0.2f)findViewById("register").setAlpha(0.2f);
             return;
         }
-        if (find("register").getAlpha() != 1f)find("register").setAlpha(1f);
+        if (findViewById("register").getAlpha() != 1f)findViewById("register").setAlpha(1f);
 
     }
 }

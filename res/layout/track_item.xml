@@ -25,14 +25,14 @@
         paddingLeft="20dp">
 
       <TextView
-          tag="title"
+          id="title"
           width="match_parent"
           height="wrap_content"
           textSize="19dp"
           text="Title"/>
 
       <TextView
-          tag="subtitle"
+          id="subtitle"
           width="match_parent"
           height="wrap_content"
           textSize="14dp"
@@ -43,7 +43,7 @@
           text="Title"/>
 
       <TextView
-          tag="desc"
+          id="desc"
           width="match_parent"
           height="wrap_content"
           textSize="13dp"

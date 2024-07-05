@@ -26,7 +26,7 @@ public class MainActivity extends BaseActivity implements Loggable {
         super.onCreate();
         setContentView("main_activity");
 
-        find("add_track").setOnClickListener(v-> startActivity(new Launch<>(CreateActivity.class)));
+        findViewById("add_track").setOnClickListener(v-> startActivity(new Launch<>(CreateActivity.class)));
         listAll();
         refresh();
         postRefresh();
@@ -70,12 +70,11 @@ public class MainActivity extends BaseActivity implements Loggable {
         if (oldLastChange != service.getLastChange()) {
             listAll();
             oldLastChange = service.getLastChange();
-            log("NEW TRACK UPDATE");
         }
     }
 
     public void listAll() {
-        LinearLayout content = find("contents");
+        LinearLayout content = findViewById("contents");
         content.removeAllViews();
         ArrayList<Order> orders = new ArrayList<>(OrderManager.getAll());
         orders.sort((o1, o2) -> Long.compare(o2.getLastChanged(), o1.getLastChanged()));
@@ -94,9 +93,9 @@ public class MainActivity extends BaseActivity implements Loggable {
                 }
             }
 
-            ((TextView)item.findViewByTag("title")).setText(order.getLabel());
-            ((TextView)item.findViewByTag("subtitle")).setText(sub);
-            ((TextView)item.findViewByTag("desc")).setText(desc);
+            ((TextView)item.findViewById("title")).setText(order.getLabel());
+            ((TextView)item.findViewById("subtitle")).setText(sub);
+            ((TextView)item.findViewById("desc")).setText(desc);
 
             item.setOnClickListener(v-> startActivity(new Launch<>(TrackActivity.class).put("package", order.getId())));
         }

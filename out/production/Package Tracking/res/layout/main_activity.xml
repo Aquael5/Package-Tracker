@@ -10,7 +10,7 @@
     width="match_parent"
     height="match_parent">
     <LinearLayout
-      tag="contents"
+      id="contents"
       width="match_parent"
       height="wrap_content"
       orientation="vertical">
@@ -23,7 +23,7 @@
     height="match_parent"
     orientation="horizontal">
     <ImageView
-        tag="add_track"
+        id="add_track"
         width="52dp"
         height="52dp"
         gravity="center"

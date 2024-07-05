@@ -16,7 +16,7 @@
         gravity="left|center">
 
       <ImageView
-          tag="back"
+          id="back"
           width="28dp"
           height="24dp"
           src="@drawable/arrow_back"/>
@@ -27,7 +27,7 @@
         orientation="vertical">
 
         <TextView
-            tag="header_title"
+            id="header_title"
             width="wrap_content"
             height="wrap_content"
             text="Header"
@@ -35,7 +35,7 @@
             paddingLeft="20dp"/>
 
         <TextView
-            tag="header_track"
+            id="header_track"
             width="wrap_content"
             height="wrap_content"
             text="TRACK CODE"
@@ -51,7 +51,7 @@
         width="match_parent"
         height="match_parent">
       <LinearLayout
-          tag="content"
+          id="content"
           width="match_parent"
           height="wrap_content"/>
     </ScrollView>
@@ -67,7 +67,7 @@
       gravity="bottom">
     <LinearLayout width="match_parent" height="wrap_content" gravity="right">
       <ImageView
-          tag="delete"
+          id="delete"
           width="52dp"
           height="52dp"
           gravity="center"

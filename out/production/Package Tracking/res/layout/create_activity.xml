@@ -43,7 +43,7 @@
             text="  NOME DO PACOTE  "/>
 
         <EditText
-            tag="title"
+            id="title"
             width="match_parent"
             height="match_parent"
             paddingTop="18dp"
@@ -69,7 +69,7 @@
             text="  CODIGO DE RASTREIO  "/>
 
         <EditText
-            tag="trackId"
+            id="trackId"
             width="match_parent"
             height="match_parent"
             paddingTop="18dp"
@@ -103,13 +103,13 @@
         height="wrap_content"
         padding="40dp">
       <Button
-          tag="register"
+          id="register"
           width="match_parent"
           height="40dp"
           text="REGISTER"/>
       <View width="4dp" height="4dp"/>
       <Button
-          tag="cancel"
+          id="cancel"
           width="match_parent"
           height="40dp"
           background="#0000"

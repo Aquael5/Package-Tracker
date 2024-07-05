@@ -8,7 +8,7 @@
     paddingLeft="10dp">
 
   <TextView
-      tag="time"
+      id="time"
       width="40dp"
       height="wrap_content"
       textSize="13dp"
@@ -56,14 +56,14 @@
       height="wrap_content"
       paddingLeft="20dp">
     <TextView
-        tag="title"
+        id="title"
         width="match_parent"
         height="wrap_content"
         textSize="16dp"
         text="Title"/>
 
     <TextView
-        tag="desc"
+        id="desc"
         width="match_parent"
         height="wrap_content"
         textSize="13dp"
