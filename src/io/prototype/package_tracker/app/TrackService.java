@@ -27,7 +27,7 @@ public class TrackService extends Service implements Loggable {
             loading = true;
             log("Updating track for: "+order.getCode()+" by "+order.getShipping().name());
             try {
-                //changed |= order.refresh();
+                changed |= order.refresh();
             } catch (Exception e) {
                 log("Error on refresh track");
                 e.printStackTrace();
